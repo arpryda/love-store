@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Store - Jual Akun Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffafcc;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            color: #fff;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #ffc4d6;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            font-weight: bold;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            background-color: #ffafcc;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #ff8da1;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .product h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.8em;
+            color: #ffafcc;
+            margin-bottom: 10px;
+        }
+        .price-list {
+            margin-bottom: 15px;
+        }
+        .price-list p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        .note {
+            background-color: #ffebf0;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            color: #ff5e78;
+        }
+        footer {
+            background-color: #ffafcc;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            font-size: 1.2em;
+        }
+        .payment-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .payment-section h3 {
+            font-size: 1.6em;
+            color: #ff5e78;
+            margin-bottom: 20px;
+        }
+        .barcode-container {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .barcode-container img {
+            max-width: 200px;
+            height: auto;
+        }
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .payment-methods img {
+            width: 50px;
+            height: auto;
+        }
+        .cta {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .cta a {
+            text-decoration: none;
+            background-color: #ffafcc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cta a:hover {
+            background-color: #ff8da1;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>⊹˙⋆ L𝘰vᥱ St𝘰rᥱ ⋆˙⊹</h1>
+        <p>Toko Akun Premium Termurah dan Terpercaya</p>
+    </header>
+
+    <nav>
+        <a onclick="showSection('netflix')">Netflix</a>
+        <a onclick="showSection('spotify')">Spotify</a>
+        <a onclick="showSection('viu')">VIU</a>
+        <a onclick="showSection('youtube')">YouTube</a>
+        <a onclick="showSection('wetv')">WeTV</a>
+        <a onclick="showSection('iqiyi')">iQIYI</a>
+    </nav>
+
+    <div class="container">
+        <!-- Netflix Section -->
+        <section id="netflix" class="active">
+            <div class="product">
+                <h2>𝐍𝐄𝐓𝐅𝐋𝐈𝐗 𝐇𝐀𝐑𝐈𝐀𝐍💫</h2>
+                <div class="price-list">
+                    <p>• 1P1U: 1 hari - 9,5k | 3 hari - 12,5k | 5 hari - 15,5k | 1 minggu - 17k | 2 minggu - 25k</p>
+                    <p>• 1P2U: 1 hari - 8k | 3 hari - 10k | 5 hari - 12k | 1 minggu - 15k | 2 minggu - 17k</p>
+                    <p>• Semi Private: 1 hari - 12k | 3 hari - 15k | 5 hari - 17k | 1 minggu - 19k</p>
+                </div>
+                <div class="note">
+                    <p>* Semua Netflix akun store, no VPN, fixing -+ 3x24 jam, garansi hangus bila tidak memberikan ss login.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotify Section -->
+        <section id="spotify">
+            <div class="product">
+                <h2>𝐒𝐏𝐎𝐓𝐈𝐅𝐘 💫</h2>
+                <div class="price-list">
+                    <p>• Famplan: 1 bulan - 17k | 2 bulan - 21k | 3 bulan - 25k</p>
+                    <p>• Indplan: 1 bulan - 23k | 2 bulan - 27k | 3 bulan - 33k</p>
+                </div>
+                <div class="note">
+                    <p>* Akun seller +2k, butuh email+pass Spotify, ppj replace +2k, indplan harus akun fresh</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIU Section -->
+        <section id="viu">
+            <div class="product">
+                <h2>𝐕𝐈𝐔💫</h2>
+                <div class="price-list">
+                    <p>• Private Biasa: 1 bulan - 9k | 3 bulan - 12k | 6 bulan - 17k | 1 tahun - 21k</p>
+                    <p>• Private Anti Limit: 1 bulan - 11k | 3 bulan - 15k | 6 bulan - 20k | 1 tahun - 25k</p>
+                </div>
+                <div class="note">
+                    <p>* Akun seller, login 1 device untuk menghindari akun ke-banned. Antilimit hanya mengurangi resiko limit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Section -->
+        <section id="youtube">
+            <div class="product">
+                <h2>𝐘𝐎𝐔𝐓𝐔𝐁𝐄 💫</h2>
+                <div class="price-list">
+                    <p>• Famplan: 1 bulan - 10k | 2 bulan - 11k | 3 bulan - 14k | 4 bulan - 17k | 5 bulan - 19k | 6 bulan - 22k</p>
+                    <p>• Indplan: 1 bulan - 17k | 3 bulan - 35k</p>
+                </div>
+                <div class="note">
+                    <p>* Akun store +2k, indplan wajib email fresh, 25-30 hari dianggap 1 bulan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WeTV Section -->
+        <section id="wetv">
+            <div class="product">
+                <h2>𝐖𝐄𝐓𝐕💫</h2>
+                <div class="price-list">
+                    <p>• Sharing: 1 bulan - 17k | 3 bulan - 21k | 1 tahun - 30k</p>
+                    <p>• Private: 1 bulan - 37k | 3 bulan - 77k | 1 tahun - 225k</p>
+                </div>
+                <div class="note">
+                    <p>* Login via Google/email, garansi bf/ke colong.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- iQIYI Section -->
+        <section id="iqiyi">
+            <div class="product">
+                <h2>𝐈𝐐𝐈𝐘𝐈💫</h2>
+                <div class="price-list">
+                    <p>• Sharing: 1 bulan - 12k | 3 bulan - 15k | 1 tahun - 19k</p>
+                    <p>• Private: 1 bulan - 35k</p>
+                </div>
+                <div class="note">
+                    <p>* Send email, akun dari store +2k, garansi 6 bulan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Section -->
+        <div class="payment-section">
+            <h3>Metode Pembayaran</h3>
+            <div class="barcode-container">
+                <p>Scan QRIS untuk pembayaran:</p>
+                <img src="img/qris.jpg" alt="QRIS Barcode" />
+            </div>
+            <div class="payment-methods">
+                <img src="img/dana.jpg" alt="DANA">
+                <img src="img/ovo.jpg" alt="OVO">
+                <img src="img/gopay.png" alt="Gopay">
+                <img src="img/spay.png" alt="ShopeePay">
+            </div>
+            <div class="cta">
+                <a href="https://t.me/lalalaaact">Hubungi @lalalaaact</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>⊹˙⋆ L𝘰vᥱ Sт𝘰rᥱ ⋆˙⊹ &copy; 2024</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
